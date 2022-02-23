@@ -1,8 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  font-size: 62.5%;
+}
 body {
-  padding: 50px;
+  padding: 2rem;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
 a {
-  color: #00B7FF;
+  text-decoration: none;
+  transition: .2s;
 }
+body > h1 {
+  margin-left: 35rem;
+  text-align: center;
+}
+body > main {
+  margin-left: 35rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+body > main > div {
+  background-color: #FBD1A2;
+  min-height: 10rem;
+  height: fit-content;
+}
+
+
+/*#region layout*/
+.main_navigation {
+  background-color: #33CA7F;
+  position: fixed;
+  top: 15rem;
+  left: 7rem;
+  width: 25rem;
+  border-radius: 1rem;
+  padding: 2rem 0;
+}
+.main_navigation a {
+  line-height: 5rem;
+  text-align: start;
+  text-indent: 2rem;
+  display: block;
+  font-size: 1.8rem;
+  color: white;
+}
+.main_navigation a:hover {
+  background-color: #ECE4B7;
+  color: #33CA7F;
+}
+.main_navigation_home {
+  position: absolute; 
+  top: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-indent: 0 !important;
+  line-height: 3rem !important;
+  background-color: #33CA7F !important;
+  padding: 0 1rem;
+  border-radius: 1rem;
+}
+.main_navigation_home:hover {
+  color: #FBD1A2 !important;
+}
+
+/*#endregion layout*/
+
+/*#region bauturi*/
+
+/*#endregion bauturi*/

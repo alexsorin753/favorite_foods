@@ -6,8 +6,8 @@ html
     link(rel='stylesheet', href='/fontawesome/css/all.css')
     script(src='/javascripts/script.js')
   body
-    nav 
-      a(href="/") Homepage
+    nav.main_navigation 
+      a.main_navigation_home(href="/") Homepage
       a(href="/bauturi") Bauturi 
       a(href="/brutarie-si-patiserie") Brutarie si Patiserie 
       a(href="/carne-si-peste") Carne si Peste 
@@ -16,4 +16,5 @@ html
       a(href="/mezeluri-si-readymeals") Mezeluri si Ready Meals 
       a(href="/conserve") Conserve 
       a(href="/dulciuri-si-micdejun") Dulciuri si Micdejun
+    button Adauga produs de #{title} nou
     block content
